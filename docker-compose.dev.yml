@@ -1,0 +1,21 @@
+# Build from local checkouts instead of git:
+#
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml build
+#
+# or set COMPOSE_FILE=docker-compose.yml:docker-compose.dev.yml in .env.
+# Paths are relative to this folder; override them with SKYFIRE_SRC and
+# PLAYERBOTS_SRC.
+
+x-dev-build: &dev-build
+  build:
+    context: ${SKYFIRE_SRC:-../SkyFire_548}
+    additional_contexts:
+      extra_modules: ${PLAYERBOTS_SRC:-../mod-playerbots}
+
+services:
+  authserver:
+    <<: *dev-build
+  worldserver:
+    <<: *dev-build
+  extractor:
+    <<: *dev-build
