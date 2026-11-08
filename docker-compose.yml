@@ -1,4 +1,5 @@
 # SkyFire 5.4.8 + mod-playerbots. See README.md.
+# EXPERIMENTAL, for testing only: see the warning in README.md.
 #
 #   cp .env.example .env               # optional, to change defaults
 #   docker compose build

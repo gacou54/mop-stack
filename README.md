@@ -4,6 +4,13 @@ Docker Compose stack for a World of Warcraft **Mists of Pandaria 5.4.8**
 (build 18414) test server: [SkyFire_548](https://github.com/gacou54/SkyFire_548)
 with [mod-playerbots](https://github.com/gacou54/mod-playerbots), and MySQL.
 
+> [!WARNING]
+> **Highly experimental, for testing only.** This stack is a personal test
+> setup for developing SkyFire and mod-playerbots. It is not a supported way to
+> run a server, it may not build or start at any given commit, and it changes
+> without notice. Defaults are insecure (for example `password` for the bot
+> accounts). Do not expect it to work, and do not use it for a public server.
+
 | Service       | Image        | Ports (host)                                       |
 |---------------|--------------|----------------------------------------------------|
 | `db`          | `mysql:8.4`  | `127.0.0.1:3306`                                   |
