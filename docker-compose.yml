@@ -14,7 +14,7 @@
 x-skyfire-image: &skyfire-image
   image: mop-stack:${MOP_IMAGE_TAG:-latest}
   build:
-    context: "${SKYFIRE_GIT:-https://github.com/gacou54/SkyFire_548.git}#${SKYFIRE_REF:-docker-compose}"
+    context: "${SKYFIRE_GIT:-https://github.com/gacou54/SkyFire_548.git}#${SKYFIRE_REF:-main}"
     additional_contexts:
       extra_modules: "${PLAYERBOTS_GIT:-https://github.com/gacou54/mod-playerbots.git}#${PLAYERBOTS_REF:-main}"
     args:

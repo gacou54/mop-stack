@@ -22,7 +22,7 @@ The `mop-stack` image is built with SkyFire_548's `Dockerfile`, with
 mod-playerbots compiled in as an out-of-tree module. This repository only pins
 which versions of the two go together and how they are configured. Container
 and config details are in SkyFire_548's
-[doc/Docker.md](https://github.com/gacou54/SkyFire_548/blob/docker-compose/doc/Docker.md).
+[doc/Docker.md](https://github.com/gacou54/SkyFire_548/blob/main/doc/Docker.md).
 
 ## Quick start
 
